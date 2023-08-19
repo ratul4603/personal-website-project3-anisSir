@@ -1,0 +1,427 @@
+
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+body{
+	font-family:sans-serif;
+}
+header{
+	background-color:cadetblue;
+	color:white;
+	display:flex;
+	width:100%;
+	height:120px;
+	justify-content:space-between;
+	align-items:center;
+}
+header .logo, nav{
+	width:50%;
+}
+.logo{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.logo img{
+	width:150px;
+	height:70px;
+	border:solid 3px black;
+	border-radius:50%;
+}
+.logo h1{
+	font-family:sans-serif;
+}
+nav ul{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding:10px 40px;
+}
+nav ul li{
+	list-style-type:none;
+}
+nav ul li a{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family:Arial;
+	font-weight:500;
+}
+nav ul li a:hover{
+	color:black;
+}
+nav .main-skill{
+	position:relative;
+}
+.main-skill .skill{
+	position:absolute;
+	top:15px;
+	left:11px;
+	display:none;
+}
+.main-skill .skill ul{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+}
+.main-skill .skill ul li{
+	margin:2px;
+	text-align:left;
+	width:100%;
+	font-size:20px;
+	text-transform:capitalize;
+	background-color:tomato;
+	padding:5px 10px;
+	border-radius:10px;
+	cursor:pointer;
+}
+nav .main-skill:hover .skill{
+	display:block;
+}
+.sec1{
+	width:90%;
+	margin:15px auto;
+}
+.s1-d1{
+	width:100%;
+	text-align:right;
+}
+.s1-d1 i{
+	font-size:110px;
+	color:yellow;
+}
+.s1-d1 i:hover{
+	color:blue;
+	transform:rotate(360deg);
+	transition:all 2s linear;
+}
+.s1-d3{
+	width:100%;
+	text-align:left;
+}
+.s1-d3 i{
+	font-size:110px;
+	color:blue;
+}
+.s1-d3 i:hover{
+	color:yellow;
+	transform:rotate(360deg);
+	transition:all 2s linear;
+}
+.s1-d2{
+	width:60%;
+	margin:0 auto;
+	height:auto;
+	text-align:center;
+}
+.s1-d2 p{
+	font-family: 'Satisfy', cursive;
+	font-size:60px;
+}
+.s1-d2 h3{
+	font-family:Arial;
+	font-size:20px;
+	margin-top:10px;
+	color:gray;
+}
+.sec2{
+	width:98%;
+	background-color:gray;
+	margin:0 auto;
+	height:auto;
+	padding-top:1px;
+	padding-bottom:30px;
+}
+.s2-d1{
+	text-align:center;
+	width:90%;
+	margin:0 auto;
+}
+.s2-d2{
+	text-align:center;
+	width:90%;
+	margin:0 auto;
+}
+.s2-d1 h1{
+	font-size:30px;
+	padding:10px;
+	margin:20px;
+}
+.s2-d2 iframe{
+	width:250px;
+	height:250px;
+	margin:10px 20px;
+	border-radius:20px;
+	border:2px solid black;
+}
+.s2-d2 iframe:hover{
+	box-shadow:5px 5px 30px white;
+}
+.sec3{
+	width:100%;
+	background-color:cadetblue;
+	color:white;
+	font-family:;
+	text-align:center;
+	margin-bottom:15px;
+}
+.s3-d1 h1{
+	padding-top:15px;
+	padding-bottom:25px;
+}
+.s3-d2{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.d2-1 {
+	height:430px;
+	width:40%;
+}
+.d2-1 img{
+	width:250px;
+	height:250px;
+	border:solid 2px black;
+	border-radius:50%;
+	margin-top:30px;
+	opacity:0.5;
+}
+.d2-1 img:hover{
+	opacity:1;
+	box-shadow:5px 5px 20px black;
+}
+.d2-2{
+	width:60%;
+	height:430px;
+	padding:5px 130px;
+}
+.d2-2 p{
+	text-align:left;
+	padding:10px;
+	font-family:Arial;
+}
+.d2-2 p a{
+	text-decoration:none;
+	color:white;
+}
+hr{
+	margin-top:8px;
+	margin-bottom:8px;
+}
+.d2-2 button{
+	border:none;
+	display:block;
+	margin:15px;
+	background-color:black;
+	color:white;
+	border-radius:10px;
+	padding:10px 20px;
+}
+.d2-2 button:hover{
+	box-shadow:5px 5px 30px white;
+}
+.sec4{
+	width:90%;
+	height:auto;
+	margin:40px auto;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.sec4 .card{
+	width:350px;
+	background-color:#C9ADA1;
+	border-radius:10px;
+}
+.card .pic{
+	margin:20px auto;
+	height:85px;
+	width:105px;
+	margin-bottom:40px;
+}
+.card .pic img{
+	padding:20px;
+	border:solid 2px white;
+	border-radius:50%;
+}
+.card .text{
+	padding:2px 10px;
+	margin-bottom:30px;
+}
+.card .text h1{
+	background-color:gray;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:17px;
+	color:white;
+	padding:10px;
+	margin-bottom:15px;
+}
+.card .text li{
+	list-style-position:inside;
+	padding:2px 10px;
+}
+.card .text li h4{
+	display:inline;
+}
+.card .text a{
+	text-decoration:none;
+	color:white;
+	font-size:15px;
+	font-family:Arial;
+	padding:50px 10px;
+}
+.sec4 .card:hover{
+	box-shadow:5px 5px 30px black;
+}
+.sec5{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	background-color:cadetblue;
+	color:white;
+	padding:50px 70px;
+	height:390px;
+}
+.sec5 div{
+	width:30%;
+	height:370px;
+	text-align:center;
+	background-color:;
+}
+.sec5 div:hover{
+	background-color:gray;
+	border-radius:10px;
+	box-shadow:5px 5px 30px white;
+}
+.s5-d1, .s5-d2, .s5-d3 > h2{
+	text-transform:uppercase;
+	text-align:center;
+	padding:15px;
+	font-family: 'Open Sans';
+}
+.s5-d1 li{
+	padding:10px 15px;
+	font-family: 'Bricolage Grotesque', sans-serif;
+	list-style-position:inside;
+	text-align:left;
+	font-size:12px;
+}
+.s5-d2 input[type="text"], input[type="email"]{
+	width:250px;
+	height:25px;
+	background-color:white;
+	color:tomato;
+	padding:10px;
+	margin:5px;
+	border:none;
+	outline:none;
+	border-radius:5px;
+	text-align:center;
+}
+.s5-d2 input[type="text"], input[type="email"]::placeholder{
+	text-align:center;
+	color:gray;
+}
+.s5-d2 textarea{
+	resize:none;
+	width:250px;
+	height:;
+	margin:10px 0;
+	border:none;
+	outline:none;
+	border-radius:5px;
+	text-align:center;
+	color:blue;
+}
+.s5-d2 textarea::placeholder{
+	text-align:center;
+	padding-top:5px;
+}
+.s5-d2 input[type="submit"], input[type="reset"]{
+	border:none;
+	outline:none;
+	background-color:#3A4572;
+	color:white;
+	font-family:Arial;
+	text-transform:uppercase;
+	padding:10px 30px;
+	border-radius:10px;
+	margin-left:5px;
+}
+.s5-d3 button{
+	border:none;
+	outline:none;
+	font-size:25px;
+	margin:10px;
+	border-radius:50%;
+	padding:10px;
+}
+.s5-d3 button:hover .fa-youtube{
+	color:red;
+}
+.s5-d3 button:hover .fa-facebook-f{
+	color:blue;
+}
+.s5-d3 button:hover .fa-instagram{
+	color:#fccc63;
+}
+.s5-d3 button:hover .fa-whatsapp{
+	color:#075e54;
+}
+.s5-d3 button:hover .fa-linkedin{
+	color:#0A66C2;
+}
+.s5-d3 button:hover .fa-github{
+	color:#4078c0;
+}
+footer{
+	background-color:black;
+	color:white;
+	height:80px;
+	width:100%;
+	text-align:center;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+footer div{
+	width:50%;
+}
+footer .f1 a{
+	text-decoration:none;
+	color:white;
+	padding:10px;
+}
+footer .f1 a:hover{
+	text-decoration:underline ;
+}
+.dotted-hr{
+	border:dotted 5px white;
+	border-bottom:none;
+	width:70px;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+	margin-top:-16px;
+}
+.dotted-hr2{
+	border:dotted 5px white;
+	border-bottom:none;
+	width:70px;
+	display:block;
+	margin:10px auto;
+}
+.dotted-hr3{
+	border:dotted 5px white;
+	border-bottom:none;
+	width:70px;
+	display:block;
+	margin:0 auto;
+	margin-bottom:15px;
+}
